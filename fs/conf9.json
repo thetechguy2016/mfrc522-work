@@ -1,0 +1,43 @@
+{
+ "device": {
+  "id": "esp32_??????"
+ },
+ "debug": {
+  "level": 2,
+  "factory_reset_gpio": -1
+ },
+ "sys": {
+  "wdt_timeout": 30
+ },
+ "conf_acl": "*",
+ "spi": {
+  "enable": true,
+  "unit_no": 3,
+  "miso_gpio": 19,
+  "mosi_gpio": 23,
+  "sclk_gpio": 18,
+  "cs0_gpio": 5,
+  "cs1_gpio": -1,
+  "cs2_gpio": -1
+ },
+ "i2c": {
+  "freq": 100000,
+  "sda_gpio": 32,
+  "scl_gpio": 33
+ },
+ "rpc": {
+  "enable": true,
+  "max_frame_size": 4096,
+  "max_queue_length": 25,
+  "default_out_channel_idle_close_timeout": 10,
+  "ws": {
+   "enable": true,
+   "reconnect_interval_min": 1,
+   "reconnect_interval_max": 60
+  },
+  "uart": {
+   "baud_rate": 115200,
+   "fc_type": 2
+  }
+ }
+}
